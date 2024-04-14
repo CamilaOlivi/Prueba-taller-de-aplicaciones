@@ -1,0 +1,132 @@
+/*css de todo app */
+
+body {
+  /* caracterisitcas del body */
+  font-family: sans-serif;
+  margin: 0 50px;
+  background-color: #e5e5e5;
+  overflow: hidden;
+  /* regular la visiblidad de los contenidos*/
+  display: flex;
+  /* flexible para alterar sus dimensiones y llenar el espacio disponible */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  /* caracteristticas de  <div class="app"> */
+  background-color: #fff;
+  width: 300px;
+  height: 500px;
+  border: 5px solid #0cb7f2;
+  border-radius: 8px;
+  padding: 15px;
+  /*añade relleno entre el elemento y su contenido.*/
+}
+
+
+#addNew {
+  /* caracteristicas de  <div id="addNew" */
+  display: flex;
+  justify-content: space-between;
+  /*Los items flex se distribuyen uniformemente sobre la línea*/
+  align-items: center;
+  background-color: #b6fffe;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  /* caracteristicas de <i class="fas fa-plus"></i>*/
+  background-color: #0cb7f2;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+
+#msg {
+  /* caracteriticas de  <div id="msg"></div>  */
+  color: red;
+}
+
+
+#tasks {
+  /* caracteristicas de   <div id="tasks"></div>  */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  /* caracteriticas de <div id="tasks"></div> */
+  border: 3px solid #0cb7f2;
+  background-color: #e2eede;
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+  /*especifica el tamaño de las canaletas, que es el espacio entre filas */
+
+}
+
+
+#tasks div .options {
+  /* caracteriticas de <div id="tasks"></div> */
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  /* caracteriticas de <div id="tasks"></div> */
+  cursor: pointer;
+  /* cursor manito */
+}
+
+/* mi css - navbar */
+
+.nav-aiep {
+  background-color: #002246 !important;
+  color: white;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  font-weight: 600;
+}
+
+.nav-list {
+  display: flex;
+
+}
+
+
+@media(max-width:768px) {
+  .navbar-logo {
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+}
